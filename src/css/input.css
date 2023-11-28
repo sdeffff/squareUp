@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#nav-header li a {
+    padding: 14px 25px;
+    transition: .25s ease;
+}
+
+#nav-header li a.active{
+    background-color: #262626;
+    border-radius: 8px;
+}
+
+#header-btn {
+    transition: .25s ease;
+    background-color: #9EFF00;
+}
+
+#header-btn:is(:hover, :focus) {
+    background: transparent;
+    color: #9dff00d0;
+    border-color: #9dff00af;
+}

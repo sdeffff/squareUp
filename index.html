@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./src/css/input.css">
+    <link rel="shortcut icon" type="image/svg" href="./src/imgs/logo-lit.svg">
+    <title>SquareUp</title>
+</head>
+<body style="background-color: #1A1A1A;">
+    <!-- create also loader -->
+    <header style="padding: 15px 5px; border-bottom: 1px solid #262626;" class="flex justify-between fixed top-0 w-[100%] bg-[#1a1a1a]">
+        <div class="logo">
+           <a href="./index.html"><img src="./src/imgs/Logo.svg" alt=""> </a>
+        </div>
+
+        <!-- create if else structure that will give active class depending on scrollY value -->
+        <ul id="nav-header" class="flex items-center justify-center gap-[10px] text-white text-[16px]">
+            <li><a href="#" class="active" id="nav-header-elem" class="rounded-[8px]">Home</a></li>
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">Services</a></li>
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">Work</a></li>
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">Process</a></li>
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">About</a></li>  
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">Careers</a></li>
+        </ul>
+
+        <button class="bg-[#9EFF00] font-medium text-[17px] text-[#262626] w-[130px] h-[55px] rounded-[8px] border-[1px] border-[#9EFF00] transition-[.2s ease]" id="header-btn">Contact Us</button>
+    </header>
+
+    <!-- try to create svg animation with anime.css -->
+    <main style="background: url(./src/imgs/Abstract\ Design\ \(1\).svg) no-repeat; background-position: bottom;" 
+    class="flex justify-center items-center flex-col text-white border-b-[] h-[100vh]">
+        <div id="main-conatiner" class="flex flex-col justify-center items-center gap-[50px]">
+            <div id="main-txt" class="flex flex-col justify-center items-center gap-[50px]">
+                <h1>A Digital Product Studio
+                    that will Work</h1>
+
+                <div class="backdrop-blur-[1px]">
+                    <p>For <span>Startups</span>, <span>Enterprise leaders</span>, <span>Media & Publishers</span> and <span>Social Good</span></p>
+                </div>
+            </div>
+
+            <div id="btn-container" class="">
+                <button>Our Works</button>
+
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
