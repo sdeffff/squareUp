@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
 #nav-header li a {
-    padding: 14px 25px;
+    padding: 14px 24px;
     transition: .25s ease;
 }
 
@@ -25,4 +33,64 @@
     background: transparent;
     color: #9dff00d0;
     border-color: #9dff00af;
+}
+
+#info { 
+    border: 1px solid #262626;
+    border-radius: 10px;
+}
+
+#info p span {
+    background-color: #262626;
+    color: #fff;
+
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 100;
+
+    letter-spacing: 0.025em;
+}
+
+#btn-container button {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#btn-container button:first-child {
+    border-color: #262626;
+    border-radius: 10px;
+}
+
+#btn-container button:last-child {
+    border-color: #9EFF00;
+    border-radius: 10px;
+}
+
+#companies {
+    position: relative;
+
+    border-top: 1px solid #262626;
+}
+
+.container {
+    position:relative; 
+    background:#ccc; 
+    padding:40px; 
+    width:100%; 
+    height:auto; 
+    min-height:100px;  
+    text-align:center;
+}
+
+#blue-section {
+    background:#06c
+}
+
+#arrow_box {
+    transform: translate(-50%);
+}
+
+#slider img {
+    pointer-events: none;
+    padding: 20px 60px;
 }

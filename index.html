@@ -11,44 +11,59 @@
 </head>
 <body style="background-color: #1A1A1A;">
     <!-- create also loader -->
-    <header style="padding: 15px 5px; border-bottom: 1px solid #262626;" class="flex justify-between fixed top-0 w-[100%] bg-[#1a1a1a]">
-        <div class="logo">
+    <header style="border-bottom: 1px solid #262626;" class="flex justify-between fixed top-0 w-[100%] bg-[#1a1a1a] items-center py-[10px] px-[10px] z-[99]">
+        <div class="w-[165px] h-[52px]" id="logo">
            <a href="./index.html"><img src="./src/imgs/Logo.svg" alt=""> </a>
         </div>
 
         <!-- create if else structure that will give active class depending on scrollY value -->
-        <ul id="nav-header" class="flex items-center justify-center gap-[10px] text-white text-[16px]">
-            <li><a href="#" class="active" id="nav-header-elem" class="rounded-[8px]">Home</a></li>
-            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">Services</a></li>
-            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">Work</a></li>
-            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">Process</a></li>
-            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">About</a></li>  
-            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626]">Careers</a></li>
+        <ul id="nav-header" class="flex items-center justify-center gap-[8px] text-[#E6E6E6] text-[16px] font-thin">
+            <li><a href="#" class="active" id="nav-header-elem" class="rounded-[8px] hover:text-white tracking-wide">Home</a></li>
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626] hover:text-white tracking-wide">Services</a></li>
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626] hover:text-white tracking-wide">Work</a></li>
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626] hover:text-white tracking-wide">Process</a></li>
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626] hover:text-white tracking-wide">About</a></li>  
+            <li><a href="#" id="nav-header-elem" class="rounded-[8px] hover:bg-[#262626] hover:text-white tracking-wide">Careers</a></li>
         </ul>
 
-        <button class="bg-[#9EFF00] font-medium text-[17px] text-[#262626] w-[130px] h-[55px] rounded-[8px] border-[1px] border-[#9EFF00] transition-[.2s ease]" id="header-btn">Contact Us</button>
+        <button class="bg-[#9EFF00] font-medium text-[17px] text-[#262626] px-[30px] py-[16px] rounded-[8px] border-[1px] border-[#9EFF00] transition-[.2s ease]" id="header-btn">Contact Us</button>
     </header>
 
     <!-- try to create svg animation with anime.css -->
     <main style="background: url(./src/imgs/Abstract\ Design\ \(1\).svg) no-repeat; background-position: bottom;" 
     class="flex justify-center items-center flex-col text-white border-b-[] h-[100vh]">
-        <div id="main-conatiner" class="flex flex-col justify-center items-center gap-[50px]">
-            <div id="main-txt" class="flex flex-col justify-center items-center gap-[50px]">
-                <h1>A Digital Product Studio
+        <div id="main-conatiner" class="flex flex-col justify-center items-center gap-[40px]">
+            <div id="main-txt" class="flex flex-col justify-center items-center gap-[40px]">
+                <h1 class="text-[60px] font-[600] text-center w-[750px] tracking-wide">A Digital Product Studio
                     that will Work</h1>
 
-                <div class="backdrop-blur-[1px]">
-                    <p>For <span>Startups</span>, <span>Enterprise leaders</span>, <span>Media & Publishers</span> and <span>Social Good</span></p>
+                <div class="backdrop-blur-[1.5px] bg-[#2424241a]" id="info">
+                    <p class="text-[20px] text-[#98989A] py-[20px] px-[45px] font-thin">For <span>Startups</span> , <span>Enterprise leaders</span> , <span>Media & Publishers</span> and <span>Social Good</span></p>
                 </div>
             </div>
 
-            <div id="btn-container" class="">
-                <button>Our Works</button>
+            <div id="btn-container" class="flex justify-center items-center gap-[20px]">
+                <button class="bg-[#24242400] text-white py-[16px] px-[30px] backdrop-blur-[7px] font-medium">Our Works</button>
 
-                <button>Contact Us</button>
+                <button class="bg-[#9EFF00] text-[#262626] py-[16px] px-[30px] font-medium">Contact Us</button>
             </div>
         </div>
     </main>
+
+    <section id="companies">
+        <div id="arrow_box" class="text-[#FDFFFA] bg-[#1A1A1A] border-[1px] border-[#262626] py-[15px] px-[35px] rounded-[40px] text-[18px] text-center top-[-30px] left-[50%] absolute tracking-wide">
+            <p class="opacity-[0.9]">Trusted by 250+ Companies</p>
+        </div>
+
+        <div id="slider" class="flex items-center justify-between w-[100%] py-[42px]">
+            <img src="./src/imgs/logo(7).svg" alt="">
+            <img src="./src/imgs/Logo (1).svg" alt="">
+            <img src="./src/imgs/logo (2).svg" alt="">
+            <img src="./src/imgs/logo (3).svg" alt="">
+            <img src="./src/imgs/logo (4).svg" alt="">
+            <img src="./src/imgs/logo (5).svg" alt="">
+        </div>
+    </section>
 
     <script src="./src/js/main.js"></script>
 </body>
